@@ -7,14 +7,14 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = [%q{pmq20 (P.S.V.R))}]
   s.date = %q{2011-10-10}
-  s.description = %q{A Mizar Console with Sophisticated Reasoning Support}
+  s.description = %q{A Mizar Console with sophisticated Automated Reasoning support}
   s.email = %q{pmq2001@gmail.com}
   s.executables = [%q{mizpry}]
   s.files = Dir.glob("{bin,lib}/**/*") + %w(README CHANGELOG LICENCE)
   s.homepage = %q{https://github.com/pmq20/t2ku-reasoner}
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{1.8.6}
-  s.summary = %q{A Mizar Console with Sophisticated Reasoning Support}
+  s.summary = %q{A Mizar Console with sophisticated Automated Reasoning support}
   s.test_files = []
 
   if s.respond_to? :specification_version then
