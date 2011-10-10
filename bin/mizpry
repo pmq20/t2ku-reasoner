@@ -1,11 +1,9 @@
 #!/usr/bin/env ruby
 
-require 'lib'
-
-$0 = 'mizar'
+$0 = 'mizpry'
 
 begin
-  require 'pry'
+  require File.expand_path('../../lib/mizar.rb',__FILE__)
 rescue LoadError
   require 'rubygems'
   require 'mizar'
@@ -17,20 +15,25 @@ opts = Slop.parse(:help => true, :multiple_switches => false) do
 Start the Mizar console.
 See: `https://www.t2ku.org` for more information.
 Copyright (c) 2011 Minqi Pan (P.S.V.R)
-Inspired by `pry` of John Mair (banisterfiend)
---
-}
+--}
 
+  on "no-history", "Disable history loading" do
+    Pry.config.history.should_load = false
+  end
+  
   on :e, :exec, "A line of code to execute in context before the session starts", true
 
 end
 
 # invoked via cli
-Pry.cli = true
+Mizar.cli = true
 
-
-
+# including any code passed with -e
+if opts[:exec]
+  exec_string = opts[:exec] + "\n"
+else
+  exec_string = ""
+end
 
 # Start the session (running any code passed with -e, if there is any)
-Pry.start(context, :input => StringIO.new(exec_string), :input_stack => [Readline])
-
+Mizar.start(:input => StringIO.new(exec_string))
