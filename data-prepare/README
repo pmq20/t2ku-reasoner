@@ -1,0 +1,11 @@
+comming soon
+
+== Useful Links for the Gems Used ===
+* http://wiki.neo4j.org/content/Using_the_Neo4j_Server_with_Ruby
+* http://rubydoc.info/gems/rest-client/1.6.1/RestClient
+* http://rubydoc.info/gems/neography/0.0.14/frames
+
+== Useful Links for the usage of neo4j ===
+* http://docs.neo4j.org/chunked/milestone/rest-api.html
+* https://github.com/tinkerpop/gremlin/wiki
+* https://github.com/tinkerpop/gremlin/wiki/Updating-a-Graph
