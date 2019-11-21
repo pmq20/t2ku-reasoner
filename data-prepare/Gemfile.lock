@@ -19,6 +19,7 @@ GEM
     method_source (0.6.6)
       ruby_parser (~> 2.0.5)
     mime-types (1.16)
+    mini_portile2 (2.4.0)
     mongo (1.4.0)
       bson (= 1.4.0)
     mongoid (2.3.0)
@@ -29,7 +30,8 @@ GEM
     neography (0.0.14)
       httparty (~> 0.7.3)
       json
-    nokogiri (1.5.0)
+    nokogiri (1.10.5)
+      mini_portile2 (~> 2.4.0)
     pry (0.9.6.2)
       coderay (~> 0.9.8)
       method_source (~> 0.6.5)
@@ -52,6 +54,9 @@ DEPENDENCIES
   mongo
   mongoid
   neography
-  nokogiri
+  nokogiri (>= 1.10.5)
   pry
   rest-client
+
+BUNDLED WITH
+   1.17.3
