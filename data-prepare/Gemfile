@@ -7,4 +7,4 @@ gem "mongoid"
 gem "bson"
 gem "bson_ext"
 gem 'mongo'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.10.8'
