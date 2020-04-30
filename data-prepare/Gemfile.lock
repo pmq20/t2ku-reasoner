@@ -11,11 +11,10 @@ GEM
     bson_ext (1.4.0)
     builder (3.0.0)
     coderay (0.9.8)
-    crack (0.1.8)
-    httparty (0.7.8)
-      crack (= 0.1.8)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
     i18n (0.6.0)
-    json (1.4.6)
+    json (2.3.0)
     method_source (0.6.6)
       ruby_parser (~> 2.0.5)
     mime-types (1.16)
@@ -26,19 +25,27 @@ GEM
       mongo (~> 1.4)
       tzinfo (~> 0.3.22)
     multi_json (1.0.3)
-    neography (0.0.14)
-      httparty (~> 0.7.3)
+    multi_xml (0.6.0)
+    neography (0.0.31)
+      httparty (>= 0.8.1)
       json
+      multi_json
+      os
+      rake
+      rubyzip
     nokogiri (1.5.0)
+    os (1.1.0)
     pry (0.9.6.2)
       coderay (~> 0.9.8)
       method_source (~> 0.6.5)
       ruby_parser (~> 2.0.5)
       slop (~> 2.1.0)
+    rake (13.0.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
+    rubyzip (2.3.0)
     sexp_processor (3.0.7)
     slop (2.1.0)
     tzinfo (0.3.30)
@@ -51,7 +58,10 @@ DEPENDENCIES
   bson_ext
   mongo
   mongoid
-  neography
+  neography (>= 0.0.14)
   nokogiri
   pry
   rest-client
+
+BUNDLED WITH
+   1.17.3
