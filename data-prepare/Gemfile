@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'neography'
+gem 'neography', '>= 0.0.14'
 gem 'rest-client'
 gem 'pry'
 gem "mongoid"
